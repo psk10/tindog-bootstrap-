@@ -1,0 +1,213 @@
+
+body{
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+   font-family: "Montserrat";
+    font-weight: bold;
+   
+}
+p{
+    color:#8f8f8f;
+}
+
+
+/* title section */ 
+
+.big-heading
+{
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+.section-heading
+{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+/* container section */
+
+.container-fluid
+{
+    padding: 7% 15%;
+}
+
+/* Navigation bar */
+.navbar
+{
+    padding:0 0 4.5rem;
+}
+.navbar-brand
+{
+    font-family: "ubuntu";
+    font-size:2.5rem ;
+    font-weight: bold;
+}
+.nav-item
+{
+    padding: 0 18px;;
+}
+.nav-link
+{
+    font-size: 1.2rem;
+    font-family:"Montserrat-light";
+}
+/* Download buttons  */
+.download-button
+{
+    margin: 5% 3% 5% 0;
+   
+}
+/* Title image */
+
+#title
+{
+    background-color: #ff4c68;
+    color:white;
+    text-align: left;
+}
+#title .container-fluid{
+    /* this is more specific thats why it will override everyone */
+    padding: 3% 15% 7%;
+}
+.title-image
+{
+   width:60%;
+  transform: rotate(25deg);
+  
+  position:absolute;
+  right: 30%;
+  
+}
+/* Features section  */
+/* stacking occurs when there is positioned element without giving position stacking doesnt occurs */
+#features
+{
+/* padding: 7% 15% ; */
+z-index: 1;
+background-color: white;
+position:relative;
+/* z-index: 1;  without z index also it will work fine bcoz  features element is positioned and it came later in html flow and no one has an z index thats why it will be on top*/
+}
+.feature-title
+{
+    font-size: 1.5rem;
+}
+.feature-box
+{
+    /* text-align: center; */
+    padding: 5%;
+}
+.icon
+{
+    color:#ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color:#ff4c68;
+}
+/* Testimonial section */
+#testimonials
+{
+    /* padding: 7% 15%; */
+    /* text-align: center; */
+    background-color:#ef8172;
+    color:#fff;
+}  
+.testimonial-text
+{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.testimonial-image
+{
+    width:10%;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+/* Press section */
+#press
+{
+    background-color:#ef8172;
+    /* text-align: center; */
+    padding-bottom: 3%;
+}
+.press-logo
+{
+    width: 15%;
+    margin:20px 20px 50px;
+}
+.carousel-item
+{
+    /* padding:7% 15%; */
+}
+/* pricing section */
+  #pricing
+  {
+    padding: 100px;
+    /* text-align: center; */
+  }
+  .price-text
+  {
+    font-size:3rem;
+    line-height: 1.5;
+  }
+  .pricing-column
+  {
+    padding:3% 2%;
+  }
+  /* cta section */
+  #cta
+{
+   
+    
+    color: white;
+    /* padding: 7% 15%; */
+   /* text-align: center; */
+    background-color: #ff4c68;
+    
+}
+.cta-heading
+{
+font-family: "Montserrat" ,sans-serif;
+font-weight: 900;
+font-style: normal;
+font-size: 3.5rem;
+line-height: 1.5;
+
+}
+/* footer section */
+#footer
+{
+    /* padding: 7% 15%; */
+    /* text-align: center; */
+}
+.social-icon
+{
+    margin:20px ;
+}
+  /* MEDIA QUERRIES   ---- is used for making website respne for all size mobile tablet  */
+@media (max-width:1028px)
+{
+#title
+{
+    text-align:center;
+}
+
+.title-image
+{
+    position:static;
+    transform: rotate(0);
+}
+}
+/* @media (max-width:500px)
+{
+    .title-image{
+        transform:rotate(85deg)
+    }
+} */
+/* max-width means that this will be appliend on those who has less or equal width than a specified width and vice versa with min width */
